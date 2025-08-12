@@ -20,7 +20,7 @@ class DocMcpServer {
   constructor() {
     this.server = new Server(
       {
-        name: 'doc-mcp',
+        name: 'document-covert-mcp',
         version: '1.0.0'
       }
     );
@@ -282,7 +282,7 @@ class DocMcpServer {
   async run() {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
-    logger.info('Doc MCP 服务器已启动');
+    logger.info('Document Convert MCP 服务器已启动');
   }
 }
 
